@@ -12,6 +12,14 @@ const myRoute:Routes=[
   {
     path:"",
     component:ToDoEntryComponent
+  },
+  {
+    path:"toDoView",
+    component:ToDoViewComponent
+  },
+  {
+    path:"navbar",
+    component:NavbarComponent
   }
 ]
 @NgModule({
@@ -24,7 +32,7 @@ const myRoute:Routes=[
   imports: [
     BrowserModule,
     AppRoutingModule,
-    RouterModule
+    RouterModule.forRoot(myRoute)
   ],
   providers: [],
   bootstrap: [AppComponent]

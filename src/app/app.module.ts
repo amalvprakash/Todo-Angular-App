@@ -6,6 +6,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { ToDoEntryComponent } from './to-do-entry/to-do-entry.component';
 import { ToDoViewComponent } from './to-do-view/to-do-view.component';
+import { NavbarComponent } from './navbar/navbar.component';
 
 const myRoute:Routes=[
   {
@@ -17,7 +18,8 @@ const myRoute:Routes=[
   declarations: [
     AppComponent,
     ToDoEntryComponent,
-    ToDoViewComponent
+    ToDoViewComponent,
+    NavbarComponent
   ],
   imports: [
     BrowserModule,
